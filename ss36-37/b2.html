@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    #Button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: aquamarine;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <button id="Button" onclick="toggleButton()">OFF</button>
+    </div>
+    <script>
+      function toggleButton() {
+        let button = document.getElementById("Button");
+        button.innerHTML = button.innerHTML === "OFF" ? "ON" : "OFF";
+      }
+    </script>
+  </body>
+</html>
